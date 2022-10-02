@@ -16,8 +16,6 @@ jobs:
         pwd
         uname -a
         echo "::endgroup::\n"
-    - name: Checkout code
-      run: |
         A="CCC"
         echo "::group::${A}\n"
         ls
