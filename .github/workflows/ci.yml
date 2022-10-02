@@ -15,10 +15,10 @@ jobs:
         ls
         pwd
         uname -a
-        echo -e "::endgroup::\n"
+        echo -e "::endgroup::"
         A="CCC"
         echo -e "::group::${A}\n"
         ls
         pwd
         uname -a
-        echo -e "::endgroup::\n"
+        echo -e "::endgroup::"
