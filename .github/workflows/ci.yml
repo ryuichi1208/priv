@@ -11,14 +11,14 @@ jobs:
     - name: Checkout code
       run: |
         A="BBB"
-        echo "::group::${A}\n"
+        echo -e "::group::${A}\n"
         ls
         pwd
         uname -a
-        echo "::endgroup::\n"
+        echo -e "::endgroup::\n"
         A="CCC"
-        echo "::group::${A}\n"
+        echo -e "::group::${A}\n"
         ls
         pwd
         uname -a
-        echo "::endgroup::\n"
+        echo -e "::endgroup::\n"
