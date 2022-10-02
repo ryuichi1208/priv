@@ -11,7 +11,8 @@ jobs:
     - name: Checkout code
       run: |
         wget https://github.com/aquasecurity/tfsec/releases/download/v1.28.0/tfsec-linux-amd64
-        ./tfsec-linux-amd64 --version
+        chmod 755 ./tfsec-linux-amd64
+        ./tfsec-linux-amd64 .
         A="BBB"
         echo "::group::${A}"
         ls
