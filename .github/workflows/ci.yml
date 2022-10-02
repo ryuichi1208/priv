@@ -10,6 +10,8 @@ jobs:
     steps:
     - name: Checkout code
       run: |
+        wget https://github.com/aquasecurity/tfsec/releases/download/v1.28.0/tfsec-linux-amd64
+        ./tfsec-linux-amd64 --version
         A="BBB"
         echo "::group::${A}"
         ls
