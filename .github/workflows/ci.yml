@@ -10,6 +10,17 @@ jobs:
     steps:
     - name: Checkout code
       run: |
+        A="BBB"
+        echo "::group::${A}\n"
         ls
         pwd
         uname -a
+        "::endgroup::\n"
+    - name: Checkout code
+      run: |
+        A="CCC"
+        echo "::group::${A}\n"
+        ls
+        pwd
+        uname -a
+        "::endgroup::\n"
